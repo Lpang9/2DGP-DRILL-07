@@ -73,10 +73,10 @@ class Ball_1:
         self.image.draw(self.x, self.y)
 
     def update(self):
-        if self.y > 80:
+        if self.y > 70:
             self.y -= random.randint(5, 30)
-            if self.y < 80:
-                self.y = 80
+            if self.y < 70:
+                self.y = 70
     pass
 
 
@@ -89,10 +89,10 @@ class Ball_2:
         self.image.draw(self.x, self.y)
 
     def update(self):
-        if self.y > 80:
+        if self.y > 70:
             self.y -= random.randint(5, 30)
-            if self.y < 80:
-                self.y = 80
+            if self.y < 70:
+                self.y = 70
     pass
 
 
