@@ -97,6 +97,10 @@ class Ball_2:
 
 
 def balls():
+    if random.randint(0, 1) == 0:
+        return Ball_1()
+    else:
+        return Ball_2()
     pass
 
 
