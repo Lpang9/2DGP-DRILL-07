@@ -75,6 +75,8 @@ class Ball_1:
     def update(self):
         if self.y > 80:
             self.y -= random.randint(5, 30)
+            if self.y < 80:
+                self.y = 80
     pass
 
 
@@ -89,6 +91,8 @@ class Ball_2:
     def update(self):
         if self.y > 80:
             self.y -= random.randint(5, 30)
+            if self.y < 80:
+                self.y = 80
     pass
 
 
