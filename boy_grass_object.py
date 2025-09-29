@@ -65,10 +65,22 @@ class Boy:
 
 
 class Ball_1:
+    def __init__(self):
+        self.image = load_image('ball21x21.png')
+        self.x, self.y = random.randint(100, 700), 599
+    def update(self):
+        if self.y > 30:
+            self.y -= 10
     pass
 
 
 class Ball_2:
+    def __init__(self):
+        self.image = load_image('ball41x41.png')
+        self.x, self.y = random.randint(100, 700), 599
+    def update(self):
+        if self.y > 30:
+            self.y -= 10
     pass
 
 
