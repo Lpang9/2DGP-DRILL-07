@@ -64,6 +64,14 @@ class Boy:
         pass
 
 
+class Ball_1:
+    pass
+
+
+class Ball_2:
+    pass
+
+
 def reset_world():
     global running
     global world
@@ -78,6 +86,10 @@ def reset_world():
 
     team = [Boy() for i in range(11)]
     world += team
+
+    ball_1 = Ball_1()
+
+    ball_2 = Ball_2()
 
     pass
 
