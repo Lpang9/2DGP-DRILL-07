@@ -68,6 +68,10 @@ class Ball_1:
     def __init__(self):
         self.image = load_image('ball21x21.png')
         self.x, self.y = random.randint(100, 700), 599
+
+    def draw(self):
+        self.image.draw(self.x, self.y)
+
     def update(self):
         if self.y > 30:
             self.y -= random.randint(5, 10)
@@ -78,6 +82,10 @@ class Ball_2:
     def __init__(self):
         self.image = load_image('ball41x41.png')
         self.x, self.y = random.randint(100, 700), 599
+
+    def draw(self):
+        self.image.draw(self.x, self.y)
+
     def update(self):
         if self.y > 30:
             self.y -= random.randint(5, 10)
@@ -99,9 +107,11 @@ def reset_world():
     team = [Boy() for i in range(11)]
     world += team
 
-    ball_1 = Ball_1()
+    ball_1 = [Ball_1() for i in range(10)]
+    world += ball_1
 
-    ball_2 = Ball_2()
+    ball_2 = [Ball_2() for i in range(10)]
+    world += ball_2
 
     pass
 
